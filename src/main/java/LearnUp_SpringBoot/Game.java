@@ -1,19 +1,11 @@
 package LearnUp_SpringBoot;
 
-
-import org.springframework.stereotype.Component;
-
 import java.util.Random;
 import java.util.Scanner;
 
-@Component
 public class Game {
 
 
-    public void welcome() {
-        System.out.println("Привет, я загадал число, попробуй его отгадать!" +
-                "\nДелай попытку, можно вводить числа от 0 до 1000!");
-    }
 
     public void play() {
         int b = new Random().nextInt(1000);
@@ -30,9 +22,6 @@ public class Game {
                 System.out.println("Ты угадал, я загадал число " + b);
                 break;
             }
-
-
         }
-
     }
 }
